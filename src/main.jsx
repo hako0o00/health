@@ -2,10 +2,16 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import HomePage from './pages/HomePage'; // Assuming you have a HomePage component
-import VisitPage from './pages/VisitPage';
-import LogIn from './pages/LogIn'; // Assuming you have a VisitPage component
-import Nav from './components/Nav'; // Assuming you have a Nav component
+import HomePage from './pages/HomePage'; 
+import LogIn from './pages/LogIn';
+import SignUp from './pages/SignUpm';
+import SignUpp from './pages/SignUpp';
+import Nav from './components/Nav';
+import DashP from './pages/DashP'
+import DashD from './pages/DashD'
+import VisitsP from './pages/VisitsP'
+import VisitsD from './pages/VisitsD'
+import NewVisit from './pages/NewVisit'
 import './App.css';
 
 // Create the router configuration
@@ -16,15 +22,34 @@ const router = createBrowserRouter([
     // Add loader if needed: loader: homePageLoader,
   },
   {
-    path: "/visit",
-    element: <VisitPage />,
-    // Add loader if needed: loader: visitPageLoader,
-  },
-  {
     path: "/Login",
     element: <LogIn />,
-    // Add loader if needed: loader: visitPageLoader,
+    },
+  {
+    path: "/Signup/Doctor",
+    element: <SignUp />,
   },
+  {
+    path: "/Signup/Patient",
+    element: <SignUpp />,
+  },
+  {
+    path: "/DashD",
+    element: <DashD />,
+  },
+  {
+    path: "/DashP",
+    element: <DashP />,
+  },
+  {
+    path: "/VisitsD",
+    element: <VisitsD />,
+  },
+    {
+    path: "/VisitsP",
+    element: <VisitsP />,
+  },
+  
 ]);
 
 // Getting the root element from the document

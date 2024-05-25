@@ -1,11 +1,11 @@
 import React from 'react';
-import N1 from '../assets/n1.png'
+import Vector1 from '../assets/Vector1.png'
 import Vector from '../assets/Vector.png'
-const Visit = () => {
+const Visit2 = () => {
   return (
     <div class =" mt-5  w-full bg-white rounded-3xl flex items-center justify-between gap-8">
             <div class="ml-6 p-2  flex items-center	">
-            <img src={N1} alt="n1" style = {{ width: '60px', height: 'auto'}} class = " ml-8 " />
+            <img src={Vector1} alt="n1" style = {{ width: '60px', height: 'auto'}} class = " ml-8 " />
             </div>
             <div class="w-1/2 py-4 flex flex-col gap-[2px] justify-center ">
               <h1 class=' font-bold	text-lg font-sans text-gray-700leading-relaxed tracking-normal'>Visit N°: #32</h1>
@@ -21,4 +21,4 @@ const Visit = () => {
   );
 };
 
-export default Visit;
+export default Visit2;

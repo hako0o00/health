@@ -11,12 +11,11 @@ export default function Navbar() {
 
         <nav className="navbar">
           
-          <a href="#home" className="active text-red px-3">Home</a>
-          <a href="#about" className="text-black px-3">Update</a>
-          <a href="#services" className="text-black px-3">Visit</a>
-          <a href="#footer" className="text-black px-3">Find</a>
+          <a href={'/'} className="active text-red px-3">Home</a>
+          <a href={'/VisitsP'} className="text-black px-3">My Visits</a>
+          <a href= {'/NewVisit'} className="text-black px-3">Find</a>
 
-          <a href="form.html" className="px-3">
+          <a href={`/SignUp/Patient`} className="px-3">
             <i className='bx bx-user' id="darkMode-icon"></i>
           </a>
         </nav>
